@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pranav's Site</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px dashed #fff;
+    }
+
+    header h1 {
+      font-size: 3.2em;
+      color: #ffd700;
+      text-shadow: 2px 2px 6px #000;
+      border: 3px dashed #fff;
+      padding: 20px 30px;
+      border-radius: 15px;
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.1); animation: bounce 2s infinite;
+      }
+@keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    header p {
+      font-style: italic;
+      margin-top: 10px;
+      color: #d0fffa;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(0, 0, 0, 0.2);
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px 0;
+      z-index: 999;
+    }
+
+    nav a {
+      text-decoration: none;
+      background: #00bfff;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-weight: bold;
+      transition: transform 0.2s ease, background 0.3s ease;
+    }
+
+    nav a:hover {
+      transform: scale(1.05);
+      background: #0088cc;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .content h2 {
+      font-size: 1.6rem;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .content p {
+      font-size: 1.1rem;
+      color: #e0ffff;
+    }
+
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .btn {
+      background: yellow;
+      color: black;
+      font-weight: bold;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .btn.secondary {
+      background: white;
+      color: #0072ff;
+    }
+
+    @media (max-width: 600px) {
+      .content p {
+        font-size: 1rem;
+      }
+      .btn {
+        padding: 10px 16px;
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="typeH1">
+<script>
+  const text = "Hello Viewer 👋! Welcome to PRANAV'S >
+  let i = 0;
+  function type() {
+    if (i < text.length) {
+      document.getElementById("typeH1").innerHTML += >
+      i++;
+      setTimeout(type, 100);
+    }
+  }
+  type();
+</script>
+</h1>
+    <p>"it's me, Pranav here. How are you feeling today?" 😎</p>
+  </header>
+
+  <nav>
+    <a href="#">🏠 Home</a>
+    <a href="#">📙 About</a>
+    <a href="#">📞 Contact</a>
+  </nav>
+
+  <div class="content">
+    <h2>This is the <span style="color: #ffff00;">chill zone</span> of <strong>Pranav</strong>.</h2>
+    <p>Scroll around, explore a bit, and don’t forget to smile! 😄<br />
+    Life is too short for boring websites, right?</p>
+
+    <div class="buttons">
+      <button class="btn">🧠 Know More About Me</button>
+      <button class="btn secondary">✉️ Let's Talk</button>
+    </div>
+  </div>
+</body>
+</html>
